@@ -7,6 +7,19 @@ Ex)What clicking the File section cell '2016-12-25'
     gave me http://localhost:53221/api/:date/api/2016-12-25{opened this in a new tab}
     -05 20 October 20 2011, 20 GMT => http://localhost:53221/api/:date/api/05%20October%202011,%20GMT
     -this-is-not-a-date => http://localhost:53221/api/:date/api/this-is-not-a-date
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      SUBMIT THIS AS THE URL
+http://localhost:#####
+          DO NOT ADD /api/date  or and variation{Ex) :date? / :date}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+FCC asks us to "Remember to submit a publicly visible app URL."... which I guess means localhost technically isn't??????? b/c it's worked???
+These websites I believe show how to accomplish^
+https://www.freecodecamp.org/news/how-to-deploy-an-application-to-heroku/
+https://medium.com/bb-tutorials-and-thoughts/sharing-your-local-app-over-the-public-internet-a02379e2bf1c
 */
 
 
