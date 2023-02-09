@@ -1,0 +1,211 @@
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+                SETTING UP GITHUB
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+
+NOTE: I wanted Microservices to contain multiple folders but the way it worked out was I just submitted all the
+files INSIDE OF boilerplate-project-timestamp!!!!
+ALSO, don't think I ever ran "git init"!!!!!
+
+
+
+SHOUT OUT ALL THESE FINE FLIRTATIOUS FOLKS...
+1)https://github.com/AdityaOli/freeCodeCamp-1/blob/master/docs/how-to-setup-freecodecamp-locally.md
+2)https://hady.geek.nz/blog/different-remote-push-url-git/
+3)
+
+
+Didn't really use these but are either great resources or have great Q & A's
+https://stackoverflow.com/questions/64994691/what-are-their-differences-remotes-origin-head-origin-main-and-remotes-origin
+https://stackoverflow.com/questions/12613793/why-is-there-a-remotes-origin-head-origin-master-entry-in-my-git-branch-l/18746099
+https://lafkblogs.wordpress.com/2015/12/08/why-git-diff-shows-nothing/
+~https://stackoverflow.com/questions/2519446/multiple-git-repositories-in-one-directory
+
+
+
+
+
+
+
+
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01
+$ git clone https://github.com/freeCodeCamp/boilerplate-project-timestamp.git
+Cloning into 'boilerplate-project-timestamp'...
+remote: Enumerating objects: 86, done.
+remote: Counting objects: 100% (1/1), done.
+Receiving objects:  44% (38/86)sed 1 (delta 0), pack-reused 85Receiving objects:  43% (37/86)
+Receiving objects: 100% (86/86), 30.53 KiB | 568.00 KiB/s, done.
+Resolving deltas: 100% (30/30), done.
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01
+$ cd boilerplate-project-timestamp
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ npm run start
+
+> fcc-api-projects-boilerplate@0.0.1 start
+> node index.js
+
+node:internal/modules/cjs/loader:998
+  throw err;
+  ^
+
+Error: Cannot find module 'express'
+Require stack:
+- C:\Users\user\OneDrive\Documents\GitHub\FFC\Microservices-01\boilerplate-project-timestamp\index.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:995:15)
+    at Module._load (node:internal/modules/cjs/loader:841:27)
+    at Module.require (node:internal/modules/cjs/loader:1061:19)
+    at require (node:internal/modules/cjs/helpers:103:18)
+    at Object.<anonymous> (C:\Users\user\OneDrive\Documents\GitHub\FFC\Microservices-01\boilerplate-project-timestamp\index.js:5:15)
+    at Module._compile (node:internal/modules/cjs/loader:1159:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1213:10)
+    at Module.load (node:internal/modules/cjs/loader:1037:32)
+    at Module._load (node:internal/modules/cjs/loader:878:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\user\\OneDrive\\Documents\\GitHub\\FFC\\Microservices-01\\boilerplate-project-timestamp\\index.js'
+  ]
+}
+
+Node.js v18.12.1
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ npm install
+
+added 59 packages, and audited 60 packages in 2s
+
+7 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ npm run start
+
+> fcc-api-projects-boilerplate@0.0.1 start
+> node index.js
+
+Your app is listening on port 49875
+
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package-lock.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git remote add upstream https://github.com/freeCodeCamp/boilerplate-project-timestamp.git
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git remote -v
+origin  https://github.com/freeCodeCamp/boilerplate-project-timestamp.git (fetch)
+origin  https://github.com/freeCodeCamp/boilerplate-project-timestamp.git (push)
+upstream        https://github.com/freeCodeCamp/boilerplate-project-timestamp.git (fetch)
+upstream        https://github.com/freeCodeCamp/boilerplate-project-timestamp.git (push)
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package-lock.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git remote set-url origin https://github.com/Liebmann5/Microservices.git
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package-lock.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git remote -v
+origin  https://github.com/Liebmann5/Microservices.git (fetch)
+origin  https://github.com/Liebmann5/Microservices.git (push)
+upstream        https://github.com/freeCodeCamp/boilerplate-project-timestamp.git (fetch)
+upstream        https://github.com/freeCodeCamp/boilerplate-project-timestamp.git (push)
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   package-lock.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git branch
+* main
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git add .
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git commit -m "Initial commit"
+[main 92e147b] Initial commit
+ 1 file changed, 1053 insertions(+), 1053 deletions(-)
+ rewrite package-lock.json (99%)
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$ git push origin main
+Enumerating objects: 89, done.
+Counting objects: 100% (89/89), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (44/44), done.
+Writing objects: 100% (89/89), 33.84 KiB | 8.46 MiB/s, done.
+Total 89 (delta 32), reused 85 (delta 30), pack-reused 0
+remote: Resolving deltas: 100% (32/32), done.
+To https://github.com/Liebmann5/Microservices.git
+ * [new branch]      main -> main
+
+user@TriangularReflex MINGW64 ~/OneDrive/Documents/GitHub/FFC/Microservices-01/boilerplate-project-timestamp (main)
+$
+
+
+
+
